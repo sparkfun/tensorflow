@@ -2,6 +2,7 @@ ifeq ($(TARGET),$(filter $(TARGET),\
   sparkfun_edge\
   sparkfun_edge2\
   sparkfun_artemis_dk\
+  sparkfun_artemis_mm_pb\
   ))
   INCLUDES += \
     -I$(APOLLO3_SDK)/$(SF_BSPS_DEST)/common/third_party/lis2dh12/

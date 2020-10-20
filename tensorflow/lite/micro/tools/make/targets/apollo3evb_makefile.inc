@@ -8,6 +8,7 @@ ifeq ($(TARGET),$(filter $(TARGET),\
   sparkfun_redboard_artemis\
   sparkfun_artemis_thing_plus\
   sparkfun_artemis_dk\
+  sparkfun_artemis_mm_pb\
   ))
   export PATH := $(MAKEFILE_DIR)/downloads/gcc_embedded/bin/:$(PATH)
   TARGET_ARCH := cortex-m4
@@ -39,6 +40,7 @@ $(MAKEFILE_DIR)/downloads/$(AM_SDK_DEST)/$(SF_BSPS_DEST): $(MAKEFILE_DIR)/downlo
     sparkfun_redboard_artemis\
     sparkfun_artemis_thing_plus\
     sparkfun_artemis_dk\
+    sparkfun_artemis_mm_pb\
     ))
     # these boards have pdm mics w/ a common implementation
     ALL_TAGS+= apollo3-pdm
@@ -50,6 +52,7 @@ $(MAKEFILE_DIR)/downloads/$(AM_SDK_DEST)/$(SF_BSPS_DEST): $(MAKEFILE_DIR)/downlo
     sparkfun_redboard_artemis\
     sparkfun_artemis_thing_plus\
     sparkfun_artemis_dk\
+    sparkfun_artemis_mm_pb\
     ))
     # these boards all have a single status LED
     ALL_TAGS+= sfe-unary-led
@@ -59,6 +62,7 @@ $(MAKEFILE_DIR)/downloads/$(AM_SDK_DEST)/$(SF_BSPS_DEST): $(MAKEFILE_DIR)/downlo
     sparkfun_edge\
     sparkfun_edge2\
     sparkfun_artemis_dk\
+    sparkfun_artemis_mm_pb\
     ))
     # these boards all have an hm01b0 camera with a common driver
     ALL_TAGS+= sfe-apollo3-hm01b0
